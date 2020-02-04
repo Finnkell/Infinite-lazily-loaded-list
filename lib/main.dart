@@ -8,11 +8,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Startup Name Generator',
+      theme: ThemeData(
+        primaryColor: Colors.white,
+      ),
       home: RandomWords(),
     );
   }
 }
-
 
 class RandomWordsState extends State<RandomWords> {
   final List<WordPair> _suggestions = <WordPair>[];
